@@ -1,0 +1,22 @@
+.main-contain{
+    display: grid;
+    place-items: center;
+    align-content: center;
+    min-height: 100vh;
+}
+.hidden-scroll{
+    opacity: 0;
+    filter: blur(5px);
+    transform: translateX(-100%);
+    transition: all 1s;
+}
+.show-scroll{
+    filter: blur(0);
+    transform: translateX(0);
+    opacity: 1;
+}
+@media(prefers-reduced-motion) {
+    .hidden-scroll{
+        transition: none;
+    }
+}

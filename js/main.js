@@ -1,12 +1,3 @@
-// window.onload = function () {
-//     music = new Audio("../music/VAKRATUNDA-MAHAKAYA .mp3")
-//     playSound()
-// }
-// function playSound() {
-//     if (music) {
-//         music.play()
-//     }
-// }
 function typingText(word, id, colors) {
     if (colors === undefined) {
         colors = ["#fff"]
@@ -38,7 +29,6 @@ function typingText(word, id, colors) {
             waiting = true
             window.setTimeout(() => {
                 // x = -1;
-                console.log(x);
                 letterCount += x
                 waiting = false
             }, 1000);
@@ -61,7 +51,6 @@ function typingText(word, id, colors) {
     // }, 500);
 }
 typingText(["वक्रतुण्ड महाकाय सूर्यकोटि समप्रभ । निर्विघ्नं कुरु मे देव सर्वकार्येषु सर्वदा ॥"], "text", ["tomato", "lightblue", "blue", "orange", "yellow"])
-typingText(["मङ्गलम् भगवान विष्णुः, मङ्गलम् गरुणध्वजः। मङ्गलम् पुण्डरी काक्षः, मङ्गलाय तनो हरिः॥"], "text2", ["tomato", "lightblue", "blue", "orange", "yellow"])
 const curtainLeftTop = document.querySelector('#curtain-left-top');
 const curtainRightTop = document.querySelector('#curtain-right-top');
 const curtainLeftBottom = document.querySelector('#curtain-left-bottom');

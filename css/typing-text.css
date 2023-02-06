@@ -1,0 +1,26 @@
+.golden-strip-background {
+    background: linear-gradient(#bb0808, #6c0000), linear-gradient(60deg, #462523 0, #cb9b51 22%, #f6e27a 45%, #f6f2c0 50%, #f6e27a 55%, #cb9b51 78%, #462523 100%);
+}
+
+.golden-strip {
+    z-index: 1;
+    width: 100%;
+    padding: 4px 5px 0px 5px;
+    border-radius: 20px 20px 0px 0px;
+    background-origin: content-box, padding-box;
+    background-clip: content-box, padding-box;
+}
+
+.golden-strip-side-only {
+    border-radius: 0px;
+    padding: 0px 5px 0px 5px;
+}
+
+.golden-strip {
+    transition: all 1s;
+}
+.gold-text {
+    background-image: linear-gradient(180deg, #462523 0, #cb9b51 22%, #f6e27a 45%, #f6f2c0 50%, #f6e27a 55%, #cb9b51 78%, #462523 100%);
+    color: transparent;
+    -webkit-background-clip: text;
+}
